@@ -14,6 +14,9 @@ public class isLocalPlayer : NetworkBehaviour {
 
         if (!isLocalPlayer)
         {
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeRotationZ
+                | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionX |
+                RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionY;
             for(int i = 0; i < notlocalDestroy.Length; i++)
             {
                 notlocalDestroy[i].SetActive(false);
