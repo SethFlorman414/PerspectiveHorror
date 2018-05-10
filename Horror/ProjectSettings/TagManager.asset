@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Scare1
+  - Interact
   layers:
   - Default
   - TransparentFX
