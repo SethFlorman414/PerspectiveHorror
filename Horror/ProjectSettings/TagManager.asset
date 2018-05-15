@@ -8,6 +8,7 @@ TagManager:
   - Interact
   - Child
   - InRoom
+  - Door
   layers:
   - Default
   - TransparentFX

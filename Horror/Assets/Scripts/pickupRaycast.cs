@@ -6,6 +6,8 @@ public class pickupRaycast : MonoBehaviour {
 
     public float maxDistance = 2f;
 
+    public Animator anim;
+
 	void Update ()
     {
         Camera cam = Camera.main;
@@ -19,7 +21,9 @@ public class pickupRaycast : MonoBehaviour {
                 Debug.Log("interact!");
                 if (Input.GetKeyDown(KeyCode.E) && hit.collider.gameObject.layer == 9)//door layer
                 {
-                    hit.collider.gameObject.GetComponent<doorInteraction>().interact();
+                    //hit.collider.gameObject.GetComponent<doorInteraction>().interact();
+
+                    anim.SetBool("Open", true);
                 }
             }
         }

@@ -35,7 +35,7 @@ public class CreepRoom : MonoBehaviour {
     public GameObject text2;
     public GameObject text3;
     public GameObject text4;
-
+    public GameObject wallWall1;
 
     void Start () {
 		
@@ -94,6 +94,7 @@ public class CreepRoom : MonoBehaviour {
             light.SetActive(true);
             forTimer = false;
             door.SetBool("Open", true);
+            wallWall1.SetActive(false);
 
         }
 
