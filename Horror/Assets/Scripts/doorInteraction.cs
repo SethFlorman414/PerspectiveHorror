@@ -21,10 +21,12 @@ public class doorInteraction : MonoBehaviour {
                 GetComponent<Animator>().SetBool(boolName, false);
             }
         }
+
 	}
 
     public void interact()
     {
         GetComponent<Animator>().SetBool(boolName, true);
+        open = true;
     }
 }
