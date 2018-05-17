@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-public class pickupRaycast : NetworkBehaviour {
+public class pickupRaycast : MonoBehaviour {
 
     public float maxDistance = 2f;
     public Camera cam;
 
-    public Animator anim;
+  //  public Animator anim;
 
 	void Update ()
     {
@@ -25,8 +25,8 @@ public class pickupRaycast : NetworkBehaviour {
                 {
 
                     //hit.collider.gameObject.GetComponent<doorInteraction>().interact();
-                    anim = hit.collider.GetComponent<Animator>();
-                    anim.SetBool("Open", true);
+                   // anim = hit.collider.GetComponent<Animator>();
+                  //  anim.SetBool("Open", true);
 
                     CmdRay(hit.collider.gameObject);
 
@@ -35,7 +35,7 @@ public class pickupRaycast : NetworkBehaviour {
         }
 	}
 
-    [Command]
+   // [Command]
     void CmdRay(GameObject hit)
     {
         
