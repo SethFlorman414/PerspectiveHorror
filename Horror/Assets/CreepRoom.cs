@@ -95,7 +95,9 @@ public class CreepRoom : MonoBehaviour {
             forTimer = false;
             door.SetBool("Open", true);
             wallWall1.SetActive(false);
-
+            //
+            enabled = false;
+            //
         }
 
 
