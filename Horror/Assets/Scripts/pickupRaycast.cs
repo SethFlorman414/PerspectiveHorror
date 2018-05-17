@@ -25,7 +25,7 @@ public class pickupRaycast : NetworkBehaviour {
                 {
 
                     //hit.collider.gameObject.GetComponent<doorInteraction>().interact();
-
+                    anim = hit.collider.GetComponent<Animator>();
                     anim.SetBool("Open", true);
 
                     CmdRay(hit.collider.gameObject);
