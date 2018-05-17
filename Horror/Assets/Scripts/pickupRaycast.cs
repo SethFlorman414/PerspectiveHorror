@@ -39,7 +39,7 @@ public class pickupRaycast : MonoBehaviour {
     void CmdRay(GameObject hit)
     {
         
-                 hit.gameObject.GetComponent<doorInteraction>().interact();
+                 hit.gameObject.transform.parent.GetComponent<doorInteraction>().interact();
               //  Destroy(hit);
          
     }
