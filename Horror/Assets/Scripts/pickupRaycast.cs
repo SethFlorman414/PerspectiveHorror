@@ -35,7 +35,7 @@ public class pickupRaycast : MonoBehaviour {
         }
 	}
 
-   // [Command]
+ //   [Command]
     void CmdRay(GameObject hit)
     {
         
