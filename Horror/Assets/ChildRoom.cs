@@ -11,12 +11,14 @@ public class ChildRoom : MonoBehaviour {
 
     public Animator openDoor;
 
-	void Start () {
+	void Start ()
+    {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 
 
 
@@ -29,17 +31,14 @@ public class ChildRoom : MonoBehaviour {
         
         if(other.gameObject.tag == "Child")
         {
-
             Wall.SetActive(true);
             Wall2.SetActive(true);
             openDoor.SetBool("Open", true);
-
+            other.gameObject.SetActive(false);
         }
         else
         {
-
             openDoor.SetBool("Open", false);
-
         }
         
 

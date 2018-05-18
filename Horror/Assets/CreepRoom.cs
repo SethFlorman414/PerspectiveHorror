@@ -37,6 +37,8 @@ public class CreepRoom : MonoBehaviour {
     public GameObject text4;
     public GameObject wallWall1;
 
+    private bool hasFinished = false;
+
     void Start () {
 		
 	}
@@ -44,7 +46,8 @@ public class CreepRoom : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (forTimer)
+  
+        if (forTimer && !hasFinished)
         {
 
             timer += Time.deltaTime;
@@ -96,7 +99,10 @@ public class CreepRoom : MonoBehaviour {
             door.SetBool("Open", true);
             wallWall1.SetActive(false);
             //
-            enabled = false;
+            timer = 0;
+            forTimer = false;
+            hasFinished = true;
+            GetComponent<Collider>().enabled = false;
             //
         }
 
@@ -107,7 +113,7 @@ public class CreepRoom : MonoBehaviour {
     public void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject.tag == "Player")
+        if(other.gameObject.tag == "Player" && !hasFinished)
         {
             forTimer = true;
             husk.SetActive(true);
