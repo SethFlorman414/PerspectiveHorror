@@ -352,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27343934}
   - component: {fileID: 27343935}
+  - component: {fileID: 27343936}
   m_Layer: 5
   m_Name: Sanity Meter
   m_TagString: Untagged
@@ -425,9 +426,34 @@ MonoBehaviour:
   m_Value: 0.593
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: UpdateSanity
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &27343936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 27343933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e162204747cd941468af81571c0334b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Fill: {fileID: 1731443773}
+  MaxColor: {r: 0, g: 1, b: 0, a: 1}
+  MinColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &51537160
 GameObject:
   m_ObjectHideFlags: 0
@@ -5808,6 +5834,35 @@ Prefab:
         type: 2}
       propertyPath: m_Color.b
       value: 0.5283019
+      objectReference: {fileID: 0}
+    - target: {fileID: 224288864320213416, guid: 024a4d77cdd4e6d4d9a700bec05296b0,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224288864320213416, guid: 024a4d77cdd4e6d4d9a700bec05296b0,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1289670256090198, guid: 024a4d77cdd4e6d4d9a700bec05296b0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224351230238095622, guid: 024a4d77cdd4e6d4d9a700bec05296b0,
+        type: 2}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224351230238095622, guid: 024a4d77cdd4e6d4d9a700bec05296b0,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224351230238095622, guid: 024a4d77cdd4e6d4d9a700bec05296b0,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 024a4d77cdd4e6d4d9a700bec05296b0, type: 2}
