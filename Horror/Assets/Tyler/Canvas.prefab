@@ -5481,8 +5481,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fill: {fileID: 114482197984892252}
-  MaxColor: {r: 0, g: 1, b: 0, a: 1}
-  MinColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &114822353428212030
 MonoBehaviour:
   m_ObjectHideFlags: 1
