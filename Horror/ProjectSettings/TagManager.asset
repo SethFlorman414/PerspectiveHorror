@@ -9,6 +9,7 @@ TagManager:
   - Child
   - InRoom
   - Door
+  - Story
   layers:
   - Default
   - TransparentFX
