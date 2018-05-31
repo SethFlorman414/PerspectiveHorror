@@ -3176,7 +3176,7 @@ MonoBehaviour:
   m_GamePlayerPrefab: {fileID: 1284554839455312, guid: 3db25816b2a6b5b43a8d5ca10cb84c02,
     type: 2}
   m_LobbyScene: Lobby
-  m_PlayScene: TestScene
+  m_PlayScene: Seth
   lobbySlots: []
   prematchCountdown: 3
   topPanel: {fileID: 1919096037}
